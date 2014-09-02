@@ -43,9 +43,13 @@
     
     <string name="pref_help_title">Read the instructions</string>
     
-    <string name="level_title_text">Level <xliff:g>%1$d/%2$d</xliff:g></string>
-    <string name="level_summary_text">Intensity: <xliff:g>%1$d/%2$d\n</xliff:g>Persistence: <xliff:g>%3$d/%4$d</xliff:g></string>
-    <string name="level_summary_text_descriptive">Call intensity: <xliff:g>%1$s\n</xliff:g>Call persistence: <xliff:g>%2$s</xliff:g></string>
+    <string name="level_title_text">Level <xliff:g>%1$d-%2$d</xliff:g></string>
+    
+    <plurals name="level_summary_text_descriptive">
+	    <item quantity="one"  >Ring audibly if the callers\' last call was ringing for more than <xliff:g>%2$d%%</xliff:g> of the time.</item>
+	    <item quantity="few"  >Ring audibly if the callers\' last <xliff:g>%1$d</xliff:g> calls were ringing for more than <xliff:g>%2$d%%</xliff:g> of the time in total.</item>
+	    <item quantity="other">Ring audibly if the callers\' last <xliff:g>%1$d</xliff:g> calls were ringing for more than <xliff:g>%2$d%%</xliff:g> of the time in total.</item>
+	</plurals>
     
     <string name="notification_title"><xliff:g>@string/app_name</xliff:g></string>
     <string name="notification_text">Call was allowed to ring audibly.</string>

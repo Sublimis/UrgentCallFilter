@@ -43,9 +43,13 @@
     
     <string name="pref_help_title">Pročitaj upute</string>
     
-    <string name="level_title_text">Razina <xliff:g>%1$d/%2$d</xliff:g></string>
-    <string name="level_summary_text">Intenzitet: <xliff:g>%1$d/%2$d\n</xliff:g>Ustrajnost: <xliff:g>%3$d/%4$d</xliff:g></string>
-    <string name="level_summary_text_descriptive">Intenzitet poziva: <xliff:g>%1$s\n</xliff:g>Ustrajnost poziva: <xliff:g>%2$s</xliff:g></string>
+    <string name="level_title_text">Razina <xliff:g>%1$d-%2$d</xliff:g></string>
+    
+    <plurals name="level_summary_text_descriptive">
+	    <item quantity="one"  >Zvoni čujno ako je pozivateljev zadnji poziv zvonio više od <xliff:g>%2$d%%</xliff:g>vremena.</item>
+	    <item quantity="few"  >Zvoni čujno ako su pozivateljeva zadnja <xliff:g>%1$d</xliff:g> poziva ukupno zvonila više od <xliff:g>%2$d%%</xliff:g>vremena.</item>
+	    <item quantity="other">Zvoni čujno ako je pozivateljevih zadnjih <xliff:g>%1$d</xliff:g> poziva ukupno zvonilo više od <xliff:g>%2$d%%</xliff:g>vremena.</item>
+	</plurals>
     
     <string name="notification_title"><xliff:g>@string/app_name</xliff:g></string>
     <string name="notification_text">Pozivu je bilo omogućeno da čujno zvoni.</string>

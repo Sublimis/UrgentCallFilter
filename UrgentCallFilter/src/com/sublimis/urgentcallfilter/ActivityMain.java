@@ -485,20 +485,6 @@ public class ActivityMain extends PreferenceActivity
 	{
 		updateScopePrefTexts(this, scope);
 	}
-	
-	public static int getIntensityFromLevel(int level)
-	{
-		int retVal = level / Config.levelCountSingle;
-		
-		return retVal;
-	}
-
-	public static int getPersistenceFromLevel(int level)
-	{
-		int retVal = level % Config.levelCountSingle;
-		
-		return retVal;
-	}
 
 	public static String getSingleLevelDescription(Context context, int level)
 	{
@@ -533,7 +519,7 @@ public class ActivityMain extends PreferenceActivity
 		if (context != null)
 		{
 			String text = context.getResources().getString(R.string.level_title_text);
-			output = String.format(text, 1+level, Config.levelCountOverall);
+			output = String.format(text, 1+Magic.getIntensityFromLevel(level), 1+Magic.getPersistenceFromLevel(level));
 		}
 		
 		return output;
@@ -545,19 +531,10 @@ public class ActivityMain extends PreferenceActivity
 		
 		if (context != null)
 		{
-			int intensity = getIntensityFromLevel(level);
-			int persistence = getPersistenceFromLevel(level);
+			int ringCount = Magic.getUrgencyLevelRingCount(level) - 1;
+			int timeRatioPercent = (int) Math.round(Magic.getUrgencyLevelRingTimeRatio(level) * 100);
 			
-			if (descriptive)
-			{
-				String text = context.getResources().getString(R.string.level_summary_text_descriptive);
-				output = String.format(text, getSingleLevelDescription(context, intensity), getSingleLevelDescription(context, persistence));
-			}
-			else
-			{
-				String text = context.getResources().getString(R.string.level_summary_text);
-				output = String.format(text, 1+intensity, Config.levelCountSingle, 1+persistence, Config.levelCountSingle);
-			}
+			output = context.getResources().getQuantityString(R.plurals.level_summary_text_descriptive, ringCount, ringCount, timeRatioPercent);
 		}
 		
 		return output;

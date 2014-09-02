@@ -242,14 +242,27 @@ public class Magic
 		}
 	}
 	
-	private int getUrgencyLevelRingCount()
+	public static int getIntensityFromLevel(int level)
+	{
+		final int retVal = level / Config.levelCountSingle;
+		
+		return retVal;
+	}
+
+	public static int getPersistenceFromLevel(int level)
+	{
+		final int retVal = level % Config.levelCountSingle;
+		
+		return retVal;
+	}
+	
+	public static int getUrgencyLevelRingCount(int level)
 	{
 		int retVal = 0;
 		
-		int level = MyPreference.getUrgencyLevel();
-		int stubbornness = ActivityMain.getIntensityFromLevel(level);
+		final int intensity = getIntensityFromLevel(level);
 
-		switch (stubbornness)
+		switch (intensity)
 		{
 		case Magic.flameUrgencyMode:
 		default:
@@ -269,14 +282,18 @@ public class Magic
 		return retVal;
 	}
 	
-	private double getUrgencyLevelRingTimeRatio()
+	public static int getUrgencyLevelRingCount()
+	{
+		return getUrgencyLevelRingCount(MyPreference.getUrgencyLevel());
+	}
+	
+	public static double getUrgencyLevelRingTimeRatio(int level)
 	{
 		double retVal = 0;
 		
-		int level = MyPreference.getUrgencyLevel();
-		int aggression = ActivityMain.getPersistenceFromLevel(level);
+		final int persistence = getPersistenceFromLevel(level);
 
-		switch (aggression)
+		switch (persistence)
 		{
 		case Magic.flameUrgencyMode:
 		default:
@@ -294,6 +311,11 @@ public class Magic
 		}
 		
 		return retVal;
+	}
+	
+	public static double getUrgencyLevelRingTimeRatio()
+	{
+		return getUrgencyLevelRingTimeRatio(MyPreference.getUrgencyLevel());
 	}
 	
 	private void loadData()

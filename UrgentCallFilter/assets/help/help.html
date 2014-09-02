@@ -8,10 +8,9 @@
         <div class="textbody">
 	        <ol>
             <li><a href="#howitworks">How does it work?</a></li>
-            <li><a href="#audience">Target audience</a></li>
-            <li><a href="#intensity">What is call intensity?</a><br /><a href="#levels">Intensity levels</a></li>
-            <li><a href="#persistence">What is call persistence?</a></li>
+            <li><a href="#levels">Filter levels</a><br /><a href="#tables">Table of filter levels</a></li>
             <li><a href="#ringermodes">Applicable ringer modes</a></li>
+            <li><a href="#audience">Target audience</a></li>
             <li><a href="#links">Links</a></li>
 	        </ol>
         </div>
@@ -22,24 +21,270 @@
         <div class="textbody">
 	        <p>
 	        Imagine yourself desperately wanting to reach somebody by phone but there is no answer, either because the person
-	        is sleeping, simply forgot to turn the ringer tone on, or can't hear it because ring volume is too low.
-	        You would keep calling and calling — depending on how important reaching this person is for you.
+	        is sleeping, simply forgot to turn the ringtone on, or can't hear it because the ring volume is too low.
+	        You would keep calling and calling — depending on the importance of the call.
 	        If it's important, you would've call many times in a matter of minutes.
 	        </p>
 	        <p>
-	        <strong>Urgent Call Filter</strong> smartly recognizes this kind of situations, and enables audible ringtone (or boosts it's volume)
-            for the incoming call that's considered important, based on your preferences. You may want to be fairly easily reachable while asleep, or you
-	        may want only very, very important calls to disturb you from your peaceful activities.
+	        <strong>Urgent Call Filter</strong> smartly recognizes this situations, and will allow the call to ring audibly or boost it's volume
+            if it's considered important.
 	        </p>
 	        <p>
-	        It does so without using system resources, and without running in the background all the time.
-	        Thus it is very reliable, and one of <em>set-it-and-forget-it</em> kind of applications.
+            The importance of the call is judged based on your preferences.
+            You may want to be fairly easily reachable while asleep, or you may only want very important calls to disturb you from your peaceful activities.
+	        </p>
+	        <p>
+	        The app does so without using system resources, and without running in the background all the time.
+	        Thus it is very reliable, and one of the <em>set-it-and-forget-it</em> kind of applications.
 	        </p>
             <p>
             <strong>Note: By default, app only works in <em>Silent</em> mode (ringer turned off) — out of <em>Silent</em> mode, it will do nothing.
                 This can be changed by preference.
             </strong>
             </p>
+        </div>
+    </div>
+    <div class="paragraph" id="levels">
+        <div class="subtitle">
+            Filter levels</div>
+        <div class="textbody">
+	        <p>
+            To learn how the filter level affects your availability to calls, let's consider some examples.
+	        </p>
+	        <p>
+            Let's say your filter level is set to the default level 2-2, and an incoming call is just about to happen.
+	        </p>
+	        <p>
+            To find out whether this call will be allowed to ring audibly, we must consider the calls received in the last several minutes.
+            We must take into account whether this caller has already called, during what time interval, how many times, and the ratio
+            of cumulative ring duration to the time interval in question.
+	        </p>
+	        <p>
+            Let's consider three simplified example scenarios:
+   	        </p>
+
+            <ol>
+            <li><strong>Person <em>A</em> already called you one time in the last two minutes prior to this call, and was ringing for 90 seconds.</strong>
+	        <p>
+            <em>Ring interval ratio</em>, or the ratio of total cumulative ring time versus the whole time interval observed, for person A is:
+	        </p>
+            <div class="equation">(1 call * 90 second ring) / (2 * 60 seconds) = 75%.</div>
+	        <p>
+            The call that's just about to happen <strong>will not be allowed to ring audibly</strong>,
+            because the person called <strong>only 1 time</strong> prior to this call, and our filter levels' minimum is set to 2 calls.
+            The interval ratio is high indeed, but the ratio alone is not enough to trigger audible ring.
+	        </p>
+            </li>
+            <li><strong>Person <em>B</em> already called you two times in the last five minutes prior to this call, each time ringing for 30 seconds.</strong>
+	        <p>
+            Ring interval ratio for person B:
+	        </p>
+            <div class="equation">(2 calls * 30 second rings) / (5 * 60 seconds) = 20%.</div>
+	        <p>
+            The call that's just about to happen <strong>will not be allowed to ring audibly</strong>,
+            because the <strong>interval ratio is less than 30%</strong>, which is a minimum for the default filter level.
+	        </p>
+            </li>
+            <li><strong>Person <em>C</em> already called you two times in the last five minutes prior to this call, each time ringing for a whole minute.</strong>
+	        <p>
+            Ring interval ratio for person C:
+	        </p>
+            <div class="equation">(2 calls * 60 second rings) / (5 * 60 seconds) = 40%.</div>
+	        <p>
+            The call that's just about to happen <strong>will be allowed to ring audibly</strong>,
+            because the person already called <strong>2 times</strong> prior to this call,
+            and the <strong>interval ratio for these two calls is more than 30%</strong>, which is a minimum for the default filter level.
+	        </p>
+            </li>
+            </ol>
+
+            <p>
+            If a person calls you more times than is required by the filter level,
+            only the minimal required amount of most recent calls is taken into consideration, the rest is ignored.
+            For example, if a person called you 5 times and the filter level is 2-2,
+            only the last 2 calls are considered when calculating the ring interval ratio and deciding whether to allow the ring to become audible.
+            </p>
+            <p id="tables">
+            Effects of filter levels with some more examples are summarized in the tables below.
+            Green is for the call that is allowed to ring audibly, red is when it's not allowed.
+            </p>
+
+            <table class="levelsTable">
+                <tr>
+                    <th>Level 1</th>
+                    <th>1 call * 30 sec in 2.5 minutes =&nbsp;20%</th>
+                    <th>1 call * 45 sec in 2.5 minutes =&nbsp;30%</th>
+                    <th>1 call * 60 sec in 2.5 minutes =&nbsp;40%</th>
+                    <th>1 call * 30 sec in 1 minute =&nbsp;50%</th>
+                </tr>
+                <tr>
+                    <td>1-1</td>
+                    <td class="yes"></td>
+                    <td class="yes"></td>
+                    <td class="yes"></td>
+                    <td class="yes"></td>
+                </tr>
+                <tr>
+                    <td>1-2</td>
+                    <td class="no"></td>
+                    <td class="yes"></td>
+                    <td class="yes"></td>
+                    <td class="yes"></td>
+                </tr>
+                <tr>
+                    <td>1-3</td>
+                    <td class="no"></td>
+                    <td class="no"></td>
+                    <td class="yes"></td>
+                    <td class="yes"></td>
+                </tr>
+                <tr>
+                    <td>1-4</td>
+                    <td class="no"></td>
+                    <td class="no"></td>
+                    <td class="no"></td>
+                    <td class="yes"></td>
+                </tr>
+            </table>
+            <table class="levelsTable">
+                <tr>
+                    <th>Level 2</th>
+                    <th>2 calls * 30 sec in 5 minutes =&nbsp;20%</th>
+                    <th>2 calls * 45 sec in 5 minutes =&nbsp;30%</th>
+                    <th>2 calls * 30 sec in 2.5 minutes =&nbsp;40%</th>
+                    <th>2 calls * 30 sec in 2 minutes =&nbsp;50%</th>
+                </tr>
+                <tr>
+                    <td>2-1</td>
+                    <td class="yes"></td>
+                    <td class="yes"></td>
+                    <td class="yes"></td>
+                    <td class="yes"></td>
+                </tr>
+                <tr>
+                    <td>2-2</td>
+                    <td class="no"></td>
+                    <td class="yes"></td>
+                    <td class="yes"></td>
+                    <td class="yes"></td>
+                </tr>
+                <tr>
+                    <td>2-3</td>
+                    <td class="no"></td>
+                    <td class="no"></td>
+                    <td class="yes"></td>
+                    <td class="yes"></td>
+                </tr>
+                <tr>
+                    <td>2-4</td>
+                    <td class="no"></td>
+                    <td class="no"></td>
+                    <td class="no"></td>
+                    <td class="yes"></td>
+                </tr>
+            </table>
+            <table class="levelsTable">
+                <tr>
+                    <th>Level 3</th>
+                    <th>3 calls * 20 sec in 5 minutes =&nbsp;20%</th>
+                    <th>3 calls * 30 sec in 5 minutes =&nbsp;30%</th>
+                    <th>3 calls * 20 sec in 2.5 minutes =&nbsp;40%</th>
+                    <th>3 calls * 30 sec in 3 minutes =&nbsp;50%</th>
+                </tr>
+                <tr>
+                    <td>3-1</td>
+                    <td class="yes"></td>
+                    <td class="yes"></td>
+                    <td class="yes"></td>
+                    <td class="yes"></td>
+                </tr>
+                <tr>
+                    <td>3-2</td>
+                    <td class="no"></td>
+                    <td class="yes"></td>
+                    <td class="yes"></td>
+                    <td class="yes"></td>
+                </tr>
+                <tr>
+                    <td>3-3</td>
+                    <td class="no"></td>
+                    <td class="no"></td>
+                    <td class="yes"></td>
+                    <td class="yes"></td>
+                </tr>
+                <tr>
+                    <td>3-4</td>
+                    <td class="no"></td>
+                    <td class="no"></td>
+                    <td class="no"></td>
+                    <td class="yes"></td>
+                </tr>
+            </table>
+            <table class="levelsTable">
+                <tr>
+                    <th>Level 4</th>
+                    <th>4 calls * 30 sec in 10 minutes =&nbsp;20%</th>
+                    <th>4 calls * 45 sec in 10 minutes =&nbsp;30%</th>
+                    <th>4 calls * 30 sec in 5 minutes =&nbsp;40%</th>
+                    <th>4 calls * 30 sec in 4 minutes =&nbsp;50%</th>
+                </tr>
+                <tr>
+                    <td>4-1</td>
+                    <td class="yes"></td>
+                    <td class="yes"></td>
+                    <td class="yes"></td>
+                    <td class="yes"></td>
+                </tr>
+                <tr>
+                    <td>4-2</td>
+                    <td class="no"></td>
+                    <td class="yes"></td>
+                    <td class="yes"></td>
+                    <td class="yes"></td>
+                </tr>
+                <tr>
+                    <td>4-3</td>
+                    <td class="no"></td>
+                    <td class="no"></td>
+                    <td class="yes"></td>
+                    <td class="yes"></td>
+                </tr>
+                <tr>
+                    <td>4-4</td>
+                    <td class="no"></td>
+                    <td class="no"></td>
+                    <td class="no"></td>
+                    <td class="yes"></td>
+                </tr>
+            </table>
+
+	        <p>
+	        General rule says, of course, that it's more difficult for a caller to reach you if the filter level is set higher.
+	        </p>
+            <p>
+            <strong>Note: By default, app does nothing if phone is not in <em>Silent</em> mode. This can be changed by preference.</strong>
+            </p>
+        </div>
+    </div>
+    <div class="paragraph" id="ringermodes">
+        <div class="subtitle">
+            Applicable ringer modes</div>
+        <div class="textbody">
+	        <p>
+	        By default, app will do it's magic only when the phone is in <em>Silent</em> mode, ie. ringtone turned off.
+	        </p>
+	        <p>
+            This can be changed by preference to also include <em>Vibrate</em> and <em>Sound</em> modes.
+	        </p>
+	        <p>
+	        When in <em>Sound</em> mode, the app will behave a bit differently.
+            Since the ringer is already turned on, it will instead boost the important call ring volume to 100%,
+            regardless of the <em>Volume</em> setting.
+	        </p>
+	        <p>
+            This is useful when the default volume is not loud enough for you to hear the ring, for example in noisy environments,
+            or when the phone is in the other room, etc.
+	        </p>
         </div>
     </div>
     <div class="paragraph" id="audience">
@@ -52,81 +297,7 @@
 	        </p>
 	        <p>
                It's not intended for those who use <em>Silent</em> mode only when in meetings, lectures or similar <em>do-not-disturb</em> situations
-               of <strong>short duration</strong>, where unattended ringtone escalation would cause inconvenience.
-	        </p>
-        </div>
-    </div>
-    <div class="paragraph" id="intensity">
-        <div class="subtitle">
-            What is call intensity?</div>
-        <div class="textbody">
-	        <p>
-	        <em>Call intensity</em> is the number of rings in a (short) time period.
-	        </p>
-	        <p>
-            As an example, consider person <em>A</em> that calls you three times in five minutes,
-            and person <em>B</em> that calls you six times in five minutes.
-            We say that calls from person <em>B</em> are more <em>intensive</em> in this case.
-            Person <em>C</em>, who would call six times in 10 minutes, would have the same call intensity as person <em>A</em>.
-	        </p>
-            <h3 id="levels">Intensity levels</h3>
-	        <p>
-	        <strong>Low (1/4)</strong><br />Incoming call ring will be audible only if the <strong>last 1 call</strong> had enough persistence.<br />
-	        </p>
-	        <p>
-	        <strong>Medium (2/4)</strong><br />Incoming call ring will be audible only if the <strong>last 2 calls</strong> had enough persistence.<br />
-	        </p>
-	        <p>
-	        <strong>High (3/4)</strong><br />Incoming call ring will be audible only if the <strong>last 3 calls</strong> had enough persistence.<br />
-	        </p>
-	        <p>
-	        <strong>Extreme (4/4)</strong><br />Incoming call ring will be audible only if the <strong>last 4 calls</strong> had enough persistence.<br />
-	        </p>
-            <p>
-            <strong>Note: By default, app does nothing when phone is not in <em>Silent</em> mode. This can be changed by preference.</strong>
-            </p>
-        </div>
-    </div>
-    <div class="paragraph" id="persistence">
-        <div class="subtitle">
-            What is call persistence?</div>
-        <div class="textbody">
-	        <p>
-	        <em>Call persistence</em> is the density of rings over a (short) time period, taking ring duration into account.
-	        </p>
-	        <p>
-            As an example, consider person <em>A</em> that calls you three times in five minutes, each time ringing for 20 seconds,
-            and person <em>B</em> that calls you three times in five minutes, but each time ringing for a whole minute.
-            We say that calls from person <em>B</em> are more <em>persistent</em> in this case.
-            Person <em>C</em>, who would call six times in five minutes by ringing for 10 seconds each time, would have the same call persistence
-            as person <em>A</em>.
-	        </p>
-        </div>
-    </div>
-    <div class="paragraph" id="ringermodes">
-        <div class="subtitle">
-            Applicable ringer modes</div>
-        <div class="textbody">
-	        <p>
-	        By default, app will do it's magic only when the ringer is in <em>Silent</em> mode, ie. ringtone turned off.
-	        </p>
-	        <p>
-            This can be changed by preference to also include <em>Vibrate</em> and <em>Sound</em> modes, or a combination of modes.
-            It can also be set to work in any mode — <em>Silent</em>, <em>Vibrate</em>, and <em>Sound</em>.
-	        </p>
-	        <p>
-	        When in <em>Sound</em> mode, app will behave a bit different than normal.
-            Since the ringer is already turned on (and there's no point of turning it on again),
-            app will instead boost the ringtone volume of important call to 100%.
-	        </p>
-	        <p>
-            <strong>Important thing to remember here is that the volume of important call will always be boosted to the maximum
-            when app is set to work in <em>Sound</em> mode and the phone is indeed in <em>Sound</em> mode,
-            regardless of the <em>Volume</em> setting.</strong>
-	        </p>
-	        <p>
-            This is useful when ringtone is not loud enough for the person to hear it, for example in noisy environments,
-            or when the phone is in the other room, etc.
+               of relatively <strong>short duration</strong>, where unattended ringtone escalation would cause inconvenience.
 	        </p>
         </div>
     </div>
@@ -136,6 +307,9 @@
         <div class="textbody">
 	        <p>
             <a href="https://play.google.com/store/apps/details?id=com.sublimis.urgentcallfilter">Urgent Call Filter comments and ratings</a>
+	        </p>
+	        <p>
+                Copyright © 2013-2014 Sublimis
 	        </p>
         </div>
     </div>

@@ -31,3 +31,33 @@ body a:visited
     font-size: smaller;
     text-align: justify;
 }
+
+.equation
+{
+    text-align: center;
+    font-style: italic;
+    margin-bottom: 1em;
+}
+
+table
+{
+    font-size: small;
+    display: block;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+th
+{
+    font-size: smaller;
+}
+
+td.yes
+{
+    background-color: limegreen;
+}
+
+td.no
+{
+    background-color: orangered;
+}
