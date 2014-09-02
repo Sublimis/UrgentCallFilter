@@ -2,7 +2,9 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
     <string name="app_name">Urgent Call Filter</string>
-
+    
+    <string name="app_description">Allow really important calls to ring audibly even in Silent mode.</string>
+    
     <string name="copyright_part1">Urgent Call Filter<xliff:g>&lt;br /&gt;&lt;b&gt;v%1$s&lt;/b&gt; (%2$s)</xliff:g></string>
     <string name="copyright_part2">
         Allow really important calls to ring audibly even in Silent mode.
