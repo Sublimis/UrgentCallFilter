@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <PreferenceCategory android:title="@string/pref_category1_title" >
+        
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="@string/pref_enabled_key"
+        android:title="@string/pref_enabled_title"
+        />
+
+    </PreferenceCategory>
+    
+    <PreferenceCategory android:title="@string/pref_category4_title" >
+        
+    <ListPreference
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:defaultValue="1"
+        android:dependency="@string/pref_enabled_key"
+        android:dialogTitle="@string/pref_scope_dialog_title"
+        android:entries="@array/pref_scope_entries"
+        android:entryValues="@array/pref_scope_values"
+        android:key="@string/pref_scope_key"
+        android:title="@string/pref_scope_title"
+	    android:icon="@android:drawable/ic_media_play"
+	    />
+    
+    </PreferenceCategory>
+    
+    <PreferenceCategory android:title="@string/pref_category2_title" >
+    
+	<Preference
+        android:key="@string/pref_dummy_level_key"
+		android:title="@string/pref_level_title"
+		android:summary="@string/pref_level_summary"
+	    android:dependency="@string/pref_enabled_key"
+	    android:icon="@android:drawable/sym_call_incoming"
+		/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/pref_category3_title" >
+        
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="@string/pref_volume_override_key"
+        android:title="@string/pref_volume_title"
+		android:summary="@string/pref_volume_summary"
+	    android:dependency="@string/pref_enabled_key"
+	    android:icon="@android:drawable/ic_lock_silent_mode_off"
+        />
+
+    </PreferenceCategory>
+    
+    <PreferenceCategory android:title="@string/pref_category5_title" >
+        
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="@string/pref_contactsonly_key"
+        android:title="@string/pref_contactsonly_title"
+		android:summary="@string/pref_contactsonly_summary"
+	    android:dependency="@string/pref_enabled_key"
+        />
+        
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="@string/pref_notification_key"
+        android:title="@string/pref_notification_title"
+		android:summary="@string/pref_notification_summary"
+	    android:dependency="@string/pref_enabled_key"
+        />
+
+    </PreferenceCategory>
+    
+    <PreferenceCategory android:title="@null" >
+        <PreferenceScreen
+            android:title="@string/pref_help_title" >
+
+            <intent android:action=".ActivityHelp.UrgentCallFilter" />
+        </PreferenceScreen>
+    </PreferenceCategory>
+    
+</PreferenceScreen>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="optmenu_share_text">Podijeli</string>
+    <string name="optmenu_help_text">Pomoć</string>
+    <string name="optmenu_about_text">O aplikaciji</string>
+    
+    <string name="share_title">Podijeli</string>
+    <string name="share_subject"><xliff:g>@string/app_name</xliff:g></string>
+    
+    <string name="pref_category1_title">Aplikacija</string>
+    <string name="pref_category2_title">Razina filtriranja</string>
+    <string name="pref_category3_title">Nadvladaj sistemsku glasnoću</string>
+    <string name="pref_category4_title">Aktivno samo kada je način zvonjave…</string>
+    <string name="pref_category5_title">Ostalo</string>
+    
+    <string name="pref_enabled_title">Omogući</string>
+    
+    <string name="pref_level_title"></string>
+    <string name="pref_level_summary"></string>
+    
+    <string name="pref_level_dialog_message">Teže vas je dosegnuti što je razina veća.</string>
+    
+    <string name="pref_volume_title">Nadvladaj</string>
+    <string name="pref_volume_summary"></string>
+    
+    <string name="pref_volume_dialog_title">Glasnoća</string>
+    <string name="pref_volume_dialog_message">Postavi željenu glasnoću za pozive kojima se omogući da čujno zazvone.</string>
+    
+    <string name="pref_volume_summary_text">Glasnoća: <xliff:g>%1$d%%</xliff:g></string>
+    <string name="pref_volume_default_summary_text">Glasnoća: Sistemski zadana</string>
+    
+    <string name="pref_scope_title"></string>
+    <string name="pref_scope_summary"></string>
+    <string name="pref_scope_summary_text"><xliff:g>%1$s%%</xliff:g></string>
+    <string name="pref_scope_dialog_title">Aktivno samo kada je način zvonjave…</string>
+    
+    <string name="pref_contactsonly_title">Samo kontakti</string>
+    <string name="pref_contactsonly_summary">Zanemaruj pozive nepoznatih ili skrivenih brojeva</string>
+    
+    <string name="pref_notification_title">Obavijesti</string>
+    <string name="pref_notification_summary">Obavijesti nakon što se pozivu omogući da čujno zazvoni</string>
+    
+    <string name="pref_help_title">Pročitaj upute</string>
+    
+    <string name="level_title_text">Razina <xliff:g>%1$d/%2$d</xliff:g></string>
+    <string name="level_summary_text">Intenzitet: <xliff:g>%1$d/%2$d\n</xliff:g>Ustrajnost: <xliff:g>%3$d/%4$d</xliff:g></string>
+    <string name="level_summary_text_descriptive">Intenzitet poziva: <xliff:g>%1$s\n</xliff:g>Ustrajnost poziva: <xliff:g>%2$s</xliff:g></string>
+    
+    <string name="notification_title"><xliff:g>@string/app_name</xliff:g></string>
+    <string name="notification_text">Pozivu je bilo omogućeno da čujno zvoni.</string>
+    
+    <string name="ok_button_text"><xliff:g>@android:string/ok</xliff:g></string>
+    <string name="cancel_button_text"><xliff:g>@android:string/cancel</xliff:g></string>
+    
+    <string name="level_1_adjective">Nisko</string>
+    <string name="level_2_adjective">Srednje</string>
+    <string name="level_3_adjective">Visoko</string>
+    <string name="level_4_adjective">Ekstremno</string>
+
+	<string-array name="pref_scope_entries">
+	    <item>Tiho (zadano)</item>
+	    <item>Tiho ili Vibracija</item>
+	    <item>Vibracija</item>
+	    <item>Vibracija ili Zvuk</item>
+	    <item>Zvuk</item>
+	    <item>Bilo koji način</item>
+	</string-array>
+    
+</resources>

@@ -1,0 +1,33 @@
+body
+{
+    font-size: 1.2em;
+    color: #898989;
+}
+
+body a
+{
+    color: cornflowerblue;
+}
+
+body a:visited
+{
+    color: cornflowerblue;
+}
+
+.subtitle
+{
+    font-size: larger;
+    font-weight: bolder;
+    color: #747474;
+}
+
+.paragraph
+{
+    margin-bottom: 1.4em;
+}
+
+.textbody
+{
+    font-size: smaller;
+    text-align: justify;
+}

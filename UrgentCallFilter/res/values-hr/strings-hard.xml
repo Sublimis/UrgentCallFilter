@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="app_name">Filter Hitnih Poziva</string>
+
+    <string name="copyright_part1">Filter Hitnih Poziva<xliff:g>&lt;br /&gt;&lt;b&gt;v%1$s&lt;/b&gt; (%2$s)</xliff:g></string>
+    <string name="copyright_part2">
+        Dozvolite zaista važnim pozivima da čujno zazvone i u Nečujnom načinu.
+        Jednostavno djelovanje, bez potrebe za namještanjem nakon instalacije.<xliff:g>\n\n</xliff:g>
+        © 2013-2014 Sublimis<xliff:g>\n\n</xliff:g>
+        <a href="https://play.google.com/store/apps/details?id=com.sublimis.urgentcallfilter">Ocijeni i komentiraj</a><xliff:g>\n</xliff:g>
+        Recite nam što mislite<xliff:g>\n</xliff:g>
+    </string>
+    
+</resources>

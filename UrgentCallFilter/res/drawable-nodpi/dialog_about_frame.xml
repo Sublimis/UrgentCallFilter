@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+
+<shape
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle"
+    >
+     
+    <corners
+        android:bottomRightRadius="@dimen/aboutDialogCornerRadius"
+        android:bottomLeftRadius="@dimen/aboutDialogCornerRadius" 
+     	android:topLeftRadius="@dimen/aboutDialogCornerRadius"
+     	android:topRightRadius="@dimen/aboutDialogCornerRadius"
+     	/>
+
+    <padding
+        android:bottom="@dimen/aboutDialogPadding"
+        android:top="@dimen/aboutDialogPadding" 
+     	android:left="@dimen/aboutDialogPadding"
+     	android:right="@dimen/aboutDialogPadding"
+     	/>
+    
+    <stroke
+        android:width="@dimen/aboutDialogBorderWidth"
+        android:color="@color/aboutDialogBorderColor"
+        />
+    
+    <solid
+        android:color="@color/aboutDialogBackgroundColor"
+        />
+    
+</shape>

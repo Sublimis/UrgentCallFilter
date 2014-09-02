@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="optmenu_share_text">Share</string>
+    <string name="optmenu_help_text">Help</string>
+    <string name="optmenu_about_text">About</string>
+    
+    <string name="share_title">Send to</string>
+    <string name="share_subject"><xliff:g>@string/app_name</xliff:g></string>
+    
+    <string name="pref_category1_title">Application</string>
+    <string name="pref_category2_title">Filter level</string>
+    <string name="pref_category3_title">Override system volume</string>
+    <string name="pref_category4_title">Active only when ringer mode is…</string>
+    <string name="pref_category5_title">Misc</string>
+    
+    <string name="pref_enabled_title">Enable</string>
+    
+    <string name="pref_level_title"></string>
+    <string name="pref_level_summary"></string>
+    
+    <string name="pref_level_dialog_message">It is more difficult to reach you if the level is higher.</string>
+    
+    <string name="pref_volume_title">Override</string>
+    <string name="pref_volume_summary"></string>
+    
+    <string name="pref_volume_dialog_title">Volume</string>
+    <string name="pref_volume_dialog_message">Set desired volume for calls that are allowed to ring audibly.</string>
+    
+    <string name="pref_volume_summary_text">Volume: <xliff:g>%1$d%%</xliff:g></string>
+    <string name="pref_volume_default_summary_text">Volume: System default</string>
+    
+    <string name="pref_scope_title"></string>
+    <string name="pref_scope_summary"></string>
+    <string name="pref_scope_summary_text"><xliff:g>%1$s%%</xliff:g></string>
+    <string name="pref_scope_dialog_title">Active only when ringer mode is…</string>
+    
+    <string name="pref_contactsonly_title">Contacts only</string>
+    <string name="pref_contactsonly_summary">Ignore calls from unknown or hidden numbers</string>
+    
+    <string name="pref_notification_title">Notifications</string>
+    <string name="pref_notification_summary">Notify after the call was allowed to ring audibly</string>
+    
+    <string name="pref_help_title">Read the instructions</string>
+    
+    <string name="level_title_text">Level <xliff:g>%1$d/%2$d</xliff:g></string>
+    <string name="level_summary_text">Intensity: <xliff:g>%1$d/%2$d\n</xliff:g>Persistence: <xliff:g>%3$d/%4$d</xliff:g></string>
+    <string name="level_summary_text_descriptive">Call intensity: <xliff:g>%1$s\n</xliff:g>Call persistence: <xliff:g>%2$s</xliff:g></string>
+    
+    <string name="notification_title"><xliff:g>@string/app_name</xliff:g></string>
+    <string name="notification_text">Call was allowed to ring audibly.</string>
+    
+    <string name="ok_button_text"><xliff:g>@android:string/ok</xliff:g></string>
+    <string name="cancel_button_text"><xliff:g>@android:string/cancel</xliff:g></string>
+    
+    <string name="level_1_adjective">Low</string>
+    <string name="level_2_adjective">Medium</string>
+    <string name="level_3_adjective">High</string>
+    <string name="level_4_adjective">Extreme</string>
+
+	<string-array name="pref_scope_entries">
+	    <item>Silent (default)</item>
+	    <item>Silent or Vibrate</item>
+	    <item>Vibrate</item>
+	    <item>Vibrate or Sound</item>
+	    <item>Sound</item>
+	    <item>Any mode</item>
+	</string-array>
+    
+</resources>

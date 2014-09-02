@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="app_name">Urgent Call Filter</string>
+
+    <string name="copyright_part1">Urgent Call Filter<xliff:g>&lt;br /&gt;&lt;b&gt;v%1$s&lt;/b&gt; (%2$s)</xliff:g></string>
+    <string name="copyright_part2">
+        Allow really important calls to ring audibly even in Silent mode.
+        Hassle-free operation, no setup is required after the installation.<xliff:g>\n\n</xliff:g>
+        © 2013-2014 Sublimis<xliff:g>\n\n</xliff:g>
+        <a href="https://play.google.com/store/apps/details?id=com.sublimis.urgentcallfilter">Rate and comment</a><xliff:g>\n</xliff:g>
+        Tell us what you think<xliff:g>\n</xliff:g>
+    </string>
+    
+</resources>

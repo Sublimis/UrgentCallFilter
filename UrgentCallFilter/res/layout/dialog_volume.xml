@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal|fill_horizontal"
+    android:orientation="vertical"
+    android:paddingTop="15dp"
+    android:paddingBottom="15dp"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp" >
+
+	<TextView
+	    android:id="@android:id/message"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:gravity="center_horizontal"
+	    />
+	
+    <SeekBar
+	    android:id="@+id/volumeSeekBar"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:gravity="center_horizontal"
+        android:defaultValue="5"
+	    android:max="10" >
+	
+	    <requestFocus />
+	</SeekBar>
+	
+</LinearLayout>

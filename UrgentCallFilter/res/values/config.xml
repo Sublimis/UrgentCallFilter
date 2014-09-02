@@ -1,0 +1,30 @@
+<resources>
+
+    <string name="appVersion">1.2.1</string>
+    <string name="appDate">2014–09–02</string>
+    
+    <string name="app_link">https://play.google.com/store/apps/details?id=com.sublimis.urgentcallfilter</string>
+    
+    <string name="pref_enabled_key">Enable</string>
+    <string name="pref_original_ringer_mode_key">OriginalRingerMode</string>
+    <string name="pref_original_volume_key">OriginalVolume</string>
+    <string name="pref_database_key">Data</string>
+    <string name="pref_level_key">UrgencyLevel</string>
+    <string name="pref_volume_override_key">VolumeOverride</string>
+    <string name="pref_volume_key">Volume</string>
+    <string name="pref_scope_key">RingerScope</string>
+    <string name="pref_notification_key">Notification</string>
+    <string name="pref_contactsonly_key">ContactsOnly</string>
+    
+    <string name="pref_dummy_level_key">Dummy</string>
+    
+	<string-array name="pref_scope_values">
+	    <item>1</item>
+	    <item>3</item>
+	    <item>2</item>
+	    <item>6</item>
+	    <item>4</item>
+	    <item>7</item>
+	</string-array>
+    
+</resources>
