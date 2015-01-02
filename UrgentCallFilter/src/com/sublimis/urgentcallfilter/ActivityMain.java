@@ -141,7 +141,6 @@ public class ActivityMain extends PreferenceActivity
 			MyPreference.setContext(this);
 
 			builder.setTitle(getLevelTitleText(this, MyPreference.getUrgencyLevel()));
-			builder.setMessage(R.string.pref_level_dialog_message);
 			builder.setPositiveButton(R.string.ok_button_text, new DialogInterface.OnClickListener()
 			{
 				@Override

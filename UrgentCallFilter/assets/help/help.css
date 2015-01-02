@@ -1,7 +1,7 @@
 body
 {
     font-size: 1.2em;
-    color: #898989;
+    color: #aaa;
 }
 
 body a
@@ -18,7 +18,7 @@ body a:visited
 {
     font-size: larger;
     font-weight: bolder;
-    color: #747474;
+    color: #bbb;
 }
 
 .paragraph

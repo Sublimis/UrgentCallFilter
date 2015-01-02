@@ -4,12 +4,9 @@
     <dimen name="aboutDialogCornerRadius">12dp</dimen>
     <dimen name="aboutDialogBorderWidth">2dp</dimen>
     <color name="aboutDialogBorderColor">#6888</color>
-    <color name="aboutDialogBackgroundColor">#deecff</color>
+    <color name="aboutDialogBackgroundColor">#093759</color>
 
-    <color name="my_bg_color">#deecff</color>
-    <color name="my_text_color">#212121</color>
-    <color name="my_text_light_color">#7a7a7a</color>
-    <color name="my_text_darklight_color">#6a6a6a</color>
-    <color name="my_text_dark_color">#000000</color>
+    <color name="bgColor">#093759</color>
+    <color name="textColor">#aaa</color>
     
 </resources>

@@ -34,7 +34,7 @@ public class ActivityHelp extends Activity
 		
 		WebView webView = (WebView) findViewById(R.id.webView);
 		
-		webView.setBackgroundColor(getResources().getColor(R.color.my_bg_color));
+		webView.setBackgroundColor(getResources().getColor(R.color.bgColor));
 		webView.loadUrl("file:///android_asset/help/help.html");
 	}
 }

@@ -42,7 +42,7 @@
 	            android:linksClickable="true"
 	            android:paddingLeft="5dp"
 	            android:textSize="16sp"
-	            android:textColor="@color/my_text_darklight_color" />
+	            android:textColor="@color/textColor" />
 	        
     	</LinearLayout>
     </LinearLayout>
@@ -54,7 +54,7 @@
         android:layout_marginTop="12dp"
         android:gravity="center"
         android:textSize="14sp"
-	    android:textColor="@color/my_text_darklight_color"
+	    android:textColor="@color/textColor"
 	    />
 
 </LinearLayout>

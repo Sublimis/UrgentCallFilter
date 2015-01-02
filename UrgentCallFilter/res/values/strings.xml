@@ -8,18 +8,23 @@
     <string name="share_title">Send to</string>
     <string name="share_subject"><xliff:g>@string/app_name</xliff:g></string>
     
-    <string name="pref_category1_title">Application</string>
+    <string name="pref_category1_title">App</string>
     <string name="pref_category2_title">Filter level</string>
-    <string name="pref_category3_title">Override system volume</string>
-    <string name="pref_category4_title">Active only when ringer mode is…</string>
-    <string name="pref_category5_title">Misc</string>
+    <string name="pref_category3_title">Ring volume</string>
+    <string name="pref_category4_title">Active when in…</string>
+    <string name="pref_category5_title">Misc.</string>
+    <string name="pref_category6_title">Help</string>
     
     <string name="pref_enabled_title">Enable</string>
     
     <string name="pref_level_title"></string>
     <string name="pref_level_summary"></string>
     
-    <string name="pref_level_dialog_message">It is more difficult to reach you if the level is higher.</string>
+    <string name="pref_level_slider_easy">Easier to reach</string>
+    <string name="pref_level_slider_hard">Harder to reach</string>
+    
+    <string name="pref_volume_slider_low">Low</string>
+    <string name="pref_volume_slider_high">High</string>
     
     <string name="pref_volume_title">Override</string>
     <string name="pref_volume_summary"></string>
@@ -33,22 +38,22 @@
     <string name="pref_scope_title"></string>
     <string name="pref_scope_summary"></string>
     <string name="pref_scope_summary_text"><xliff:g>%1$s%%</xliff:g></string>
-    <string name="pref_scope_dialog_title">Active only when ringer mode is…</string>
+    <string name="pref_scope_dialog_title">Active when in…</string>
     
     <string name="pref_contactsonly_title">Contacts only</string>
     <string name="pref_contactsonly_summary">Ignore calls from unknown or hidden numbers</string>
     
     <string name="pref_notification_title">Notifications</string>
-    <string name="pref_notification_summary">Notify after the call was allowed to ring audibly</string>
+    <string name="pref_notification_summary">Notify after a call was allowed to ring audibly</string>
     
-    <string name="pref_help_title">Read the instructions</string>
+    <string name="pref_help_title">Help</string>
     
-    <string name="level_title_text">Level <xliff:g>%1$d-%2$d</xliff:g></string>
+    <string name="level_title_text">Level <xliff:g>%1$d.%2$d</xliff:g></string>
     
     <plurals name="level_summary_text_descriptive">
-	    <item quantity="one"  >Ring audibly if the callers\' last call was ringing for more than <xliff:g>%2$d%%</xliff:g> of the time.</item>
-	    <item quantity="few"  >Ring audibly if the callers\' last <xliff:g>%1$d</xliff:g> calls were ringing for more than <xliff:g>%2$d%%</xliff:g> of the time in total.</item>
-	    <item quantity="other">Ring audibly if the callers\' last <xliff:g>%1$d</xliff:g> calls were ringing for more than <xliff:g>%2$d%%</xliff:g> of the time in total.</item>
+	    <item quantity="one"  >Audibly ring an incoming call, if the caller has already:\n\n• Called once\n• Rang for <xliff:g>%2$d%%</xliff:g> of the time</item>
+	    <item quantity="few"  >Audibly ring an incoming call, if the caller has already:\n\n• Called <xliff:g>%1$d</xliff:g> times\n• Rang for <xliff:g>%2$d%%</xliff:g> of the time</item>
+	    <item quantity="other">Audibly ring an incoming call, if the caller has already:\n\n• Called <xliff:g>%1$d</xliff:g> times\n• Rang for <xliff:g>%2$d%%</xliff:g> of the time</item>
 	</plurals>
     
     <string name="notification_title"><xliff:g>@string/app_name</xliff:g></string>

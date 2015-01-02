@@ -75,7 +75,7 @@
 
     </PreferenceCategory>
     
-    <PreferenceCategory android:title="@null" >
+    <PreferenceCategory android:title="@string/pref_category6_title" >
         <PreferenceScreen
             android:title="@string/pref_help_title" >
 
