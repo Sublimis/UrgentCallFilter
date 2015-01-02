@@ -3,13 +3,13 @@
 
     <string name="app_name">Filter Hitnih Poziva</string>
     
-    <string name="app_description">Dozvolite zaista važnim pozivima da čujno zazvone i u Nečujnom načinu.</string>
+    <string name="app_description">Kada vas netko nazove nekoliko puta zaredom, ova aplikacija će učiniti da vaš telefon zazvoni bez obzira na sve — čak i u Nečujnom načinu.</string>
     
     <string name="copyright_part1">Filter Hitnih Poziva<xliff:g>&lt;br /&gt;&lt;b&gt;v%1$s&lt;/b&gt; (%2$s)</xliff:g></string>
     <string name="copyright_part2">
-        Dozvolite zaista važnim pozivima da čujno zazvone i u Nečujnom načinu.
-        Jednostavno djelovanje, bez potrebe za namještanjem nakon instalacije.<xliff:g>\n\n</xliff:g>
-        © 2013-2014 Sublimis<xliff:g>\n\n</xliff:g>
+        Kada vas netko nazove nekoliko puta zaredom, ova aplikacija će učiniti da vaš telefon zazvoni bez obzira na sve — čak i u Nečujnom načinu.
+        Jednostavno djelovanje, bez potrebe za namještanjem.<xliff:g>\n\n</xliff:g>
+        © 2013-2015 Sublimis<xliff:g>\n\n</xliff:g>
         <a href="https://play.google.com/store/apps/details?id=com.sublimis.urgentcallfilter">Ocijeni i komentiraj</a><xliff:g>\n</xliff:g>
         Recite nam što mislite<xliff:g>\n</xliff:g>
     </string>

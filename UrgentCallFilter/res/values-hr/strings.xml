@@ -10,16 +10,21 @@
     
     <string name="pref_category1_title">Aplikacija</string>
     <string name="pref_category2_title">Razina filtriranja</string>
-    <string name="pref_category3_title">Nadvladaj sistemsku glasnoću</string>
-    <string name="pref_category4_title">Aktivno samo kada je način zvonjave…</string>
+    <string name="pref_category3_title">Glasnoća zvonjave</string>
+    <string name="pref_category4_title">Aktivno dok je način zvonjave…</string>
     <string name="pref_category5_title">Ostalo</string>
+    <string name="pref_category6_title">Pomoć</string>
     
     <string name="pref_enabled_title">Omogući</string>
     
     <string name="pref_level_title"></string>
     <string name="pref_level_summary"></string>
     
-    <string name="pref_level_dialog_message">Teže vas je dosegnuti što je razina veća.</string>
+    <string name="pref_level_slider_easy">Lakše dosegnuti</string>
+    <string name="pref_level_slider_hard">Teže dosegnuti</string>
+    
+    <string name="pref_volume_slider_low">Niska</string>
+    <string name="pref_volume_slider_high">Visoka</string>
     
     <string name="pref_volume_title">Nadvladaj</string>
     <string name="pref_volume_summary"></string>
@@ -33,7 +38,7 @@
     <string name="pref_scope_title"></string>
     <string name="pref_scope_summary"></string>
     <string name="pref_scope_summary_text"><xliff:g>%1$s%%</xliff:g></string>
-    <string name="pref_scope_dialog_title">Aktivno samo kada je način zvonjave…</string>
+    <string name="pref_scope_dialog_title">@string/pref_category4_title</string>
     
     <string name="pref_contactsonly_title">Samo kontakti</string>
     <string name="pref_contactsonly_summary">Zanemaruj pozive nepoznatih ili skrivenih brojeva</string>
@@ -41,14 +46,14 @@
     <string name="pref_notification_title">Obavijesti</string>
     <string name="pref_notification_summary">Obavijesti nakon što se pozivu omogući da čujno zazvoni</string>
     
-    <string name="pref_help_title">Pročitaj upute</string>
+    <string name="pref_help_title">Pomoć</string>
     
-    <string name="level_title_text">Razina <xliff:g>%1$d-%2$d</xliff:g></string>
+    <string name="level_title_text">Razina <xliff:g>%1$d.%2$d</xliff:g></string>
     
     <plurals name="level_summary_text_descriptive">
-	    <item quantity="one"  >Zvoni čujno ako je pozivateljev zadnji poziv zvonio više od <xliff:g>%2$d%%</xliff:g>vremena.</item>
-	    <item quantity="few"  >Zvoni čujno ako su pozivateljeva zadnja <xliff:g>%1$d</xliff:g> poziva ukupno zvonila više od <xliff:g>%2$d%%</xliff:g>vremena.</item>
-	    <item quantity="other">Zvoni čujno ako je pozivateljevih zadnjih <xliff:g>%1$d</xliff:g> poziva ukupno zvonilo više od <xliff:g>%2$d%%</xliff:g>vremena.</item>
+	    <item quantity="one"  >Čujno zazvoni dolazni poziv, ako je pozivatelj već:\n\n• Zvao jednom\n• Zvonio <xliff:g>%2$d%%</xliff:g> vremena</item>
+	    <item quantity="few"  >Čujno zazvoni dolazni poziv, ako je pozivatelj već:\n\n• Zvao <xliff:g>%1$d</xliff:g> puta\n• Zvonio <xliff:g>%2$d%%</xliff:g> vremena</item>
+	    <item quantity="other">Čujno zazvoni dolazni poziv, ako je pozivatelj već:\n\n• Zvao <xliff:g>%1$d</xliff:g> puta\n• Zvonio <xliff:g>%2$d%%</xliff:g> vremena</item>
 	</plurals>
     
     <string name="notification_title"><xliff:g>@string/app_name</xliff:g></string>

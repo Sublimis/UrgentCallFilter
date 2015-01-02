@@ -38,7 +38,7 @@
     <string name="pref_scope_title"></string>
     <string name="pref_scope_summary"></string>
     <string name="pref_scope_summary_text"><xliff:g>%1$s%%</xliff:g></string>
-    <string name="pref_scope_dialog_title">Active when in…</string>
+    <string name="pref_scope_dialog_title">@string/pref_category4_title</string>
     
     <string name="pref_contactsonly_title">Contacts only</string>
     <string name="pref_contactsonly_summary">Ignore calls from unknown or hidden numbers</string>
