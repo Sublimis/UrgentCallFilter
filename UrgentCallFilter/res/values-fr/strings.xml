@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="optmenu_share_text">Partager</string>
+    <string name="optmenu_help_text">Aide</string>
+    <string name="optmenu_about_text">A propos</string>
+
+    <string name="share_title">Envoyer à</string>
+    <string name="share_subject"><xliff:g>@string/app_name</xliff:g></string>
+
+    <string name="pref_category1_title">Application</string>
+    <string name="pref_category2_title">Niveau du filtre</string>
+    <string name="pref_category3_title">Volume de la sonnerie</string>
+    <string name="pref_category4_title">Activée dans le mode…</string>
+    <string name="pref_category5_title">Divers</string>
+    <string name="pref_category6_title">Aide</string>
+
+    <string name="pref_enabled_title">Activer</string>
+
+    <string name="pref_level_title"></string>
+    <string name="pref_level_summary"></string>
+
+    <string name="pref_level_slider_easy">+ facile à joindre</string>
+    <string name="pref_level_slider_hard">+ dur à joindre</string>
+
+    <string name="pref_volume_slider_low">Faible</string>
+    <string name="pref_volume_slider_high">Fort</string>
+
+    <string name="pref_volume_title">Forçage</string>
+    <string name="pref_volume_summary"></string>
+
+    <string name="pref_volume_dialog_title">Volume</string>
+    <string name="pref_volume_dialog_message">Réglez le volume forcé pour les appels autorisés à sonner</string>
+
+    <string name="pref_volume_summary_text">Volume : <xliff:g>%1$d%%</xliff:g></string>
+    <string name="pref_volume_default_summary_text">Volume : paramètres système</string>
+
+    <string name="pref_scope_title"></string>
+    <string name="pref_scope_summary"></string>
+    <string name="pref_scope_summary_text"><xliff:g>%1$s%%</xliff:g></string>
+    <string name="pref_scope_dialog_title">@string/pref_category4_title</string>
+
+    <string name="pref_contactsonly_title">Contacts uniquement</string>
+    <string name="pref_contactsonly_summary">Ignorer les appels des numéros inconnus ou cachés</string>
+
+    <string name="pref_notification_title">Notifications</string>
+    <string name="pref_notification_summary">Afficher une notification quand un appel a été autorisé à sonner</string>
+
+    <string name="pref_help_title">Aide</string>
+
+    <string name="level_title_text">Niveau <xliff:g>%1$d.%2$d</xliff:g></string>
+
+    <plurals name="level_summary_text_descriptive">
+        <item quantity="one"  >Faire sonner le téléphone si la personne :\n\n• A appelé une fois\n• A appelé <xliff:g>%2$d%%</xliff:g> du temps</item>
+        <item quantity="few"  >Faire sonner le téléphone si la personne :\n\n• A appelé <xliff:g>%1$d</xliff:g> fois\n• A appelé <xliff:g>%2$d%%</xliff:g> du temps</item>
+        <item quantity="other">Faire sonner le téléphone si la personne :\n\n• A appelé <xliff:g>%1$d</xliff:g> fois\n• A appelé <xliff:g>%2$d%%</xliff:g> du temps</item>
+    </plurals>
+
+    <string name="notification_title"><xliff:g>@string/app_name</xliff:g></string>
+    <string name="notification_text">L'appel a été autorisé à sonner</string>
+
+    <string name="ok_button_text"><xliff:g>@android:string/ok</xliff:g></string>
+    <string name="cancel_button_text"><xliff:g>@android:string/cancel</xliff:g></string>
+
+    <string name="level_1_adjective">Faible</string>
+    <string name="level_2_adjective">Moyen</string>
+    <string name="level_3_adjective">Haut</string>
+    <string name="level_4_adjective">Extrême</string>
+
+    <string-array name="pref_scope_entries">
+        <item>Silencieux (par défaut)</item>
+        <item>Silencieux ou vibreur</item>
+        <item>Vibreur</item>
+        <item>Vibreur ou sonnerie</item>
+        <item>Sonnerie</item>
+        <item>N'importe quel mode</item>
+    </string-array>
+
+</resources>
+

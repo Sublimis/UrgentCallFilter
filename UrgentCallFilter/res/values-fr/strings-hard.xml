@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="app_name">Emergency Call Filter</string>
+
+    <string name="app_description">Emergency Call Filter vous permet de faire sonner votre téléphone quand quelqu'un vous appelle plusieurs fois d'affilée, et ce, même s'il est en mode silencieux.</string>
+
+    <string name="copyright_part1">Emergency Call Filter<xliff:g>&lt;br /&gt;&lt;b&gt;v%1$s&lt;/b&gt; (%2$s)</xliff:g></string>
+    <string name="copyright_part2">
+        Emergency Call Filter vous permet de faire sonner votre téléphone quand quelqu'un vous appelle plusieurs fois d'affilée, et ce, même s'il est en mode silencieux.
+        Aucune configuration à faire.<xliff:g>\n\n</xliff:g>
+        © 2013-2015 Sublimis<xliff:g>\n\n</xliff:g>
+        <a href="https://play.google.com/store/apps/details?id=com.sublimis.urgentcallfilter">Donner une note et laisser un commentaire</a><xliff:g>\n</xliff:g>
+        Que pensez-vous de l'application ?<xliff:g>\n</xliff:g>
+    </string>
+</resources>
+
